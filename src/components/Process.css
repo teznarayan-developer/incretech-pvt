@@ -1,0 +1,23 @@
+.process {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+}
+
+.process-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* align-items: center;
+  justify-content: center; */
+  row-gap: 1em;
+}
+
+@media (min-width: 1200px) {
+  .process-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* align-items: center;
+    justify-content: center; */
+    column-gap: 2em;
+  }
+}

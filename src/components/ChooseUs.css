@@ -1,0 +1,77 @@
+.choose-us-section {
+  margin-top: 6em;
+}
+
+.startup-container {
+  margin-top: 4em;
+}
+
+.choose-us-cards {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: column;
+  row-gap: 1.5em;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7,
+.card-8,
+.card-9,
+.card-10 {
+  background-color: #f3f0f0;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-1,
+.card-3,
+.card-5,
+.card-7,
+.card-9 {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (min-width: 800px) {
+  .choose-us-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .choose-us-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6,
+  .card-7,
+  .card-8,
+  .card-9,
+  .card-10 {
+    height: 8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .choose-us-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* gap: 2em; */
+  }
+}

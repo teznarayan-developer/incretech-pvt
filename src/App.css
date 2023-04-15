@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+body {
+  scroll-behavior: smooth;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  overflow: visible;
+  /* overflow-x: hidden; */
+}
+
+body,
+.App {
+  animation: transition-in 1s ease-in-out 200ms backwards;
+}
+
+.transition-in {
+  animation: transition-in 1s ease-in-out 200ms backwards;
+}
+
+@keyframes transition-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 99999;
+}
+
+.loader {
+  border: 2px solid #dbf2ff;
+  border-right: 2px solid #018df7;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.drop-in {
+  animation: drop-in 1s ease 200ms backwards;
+}
+
+.drop-in-2 {
+  animation: drop-in 1200ms ease 500ms backwards;
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}

@@ -1,0 +1,27 @@
+.heading-primary {
+  font-size: 2rem;
+  margin-bottom: 0.4em;
+}
+
+.heading-secondary-policy {
+  font-size: 1.8rem;
+  margin-bottom: 0.4em;
+}
+
+.heading-tertiary-policy {
+  font-size: 1.4rem;
+  margin-bottom: 0.4em;
+}
+
+.page p {
+  font-size: 0.9rem;
+  margin-bottom: 0.3em;
+}
+
+.page ul {
+  padding: 0.2em 1em;
+}
+
+.page ul li {
+  padding: 0.3em;
+}

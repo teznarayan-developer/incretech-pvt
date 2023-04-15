@@ -1,0 +1,151 @@
+#contact {
+  padding-top: 8em;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  margin-bottom: 2em;
+  background-color: #f7f7f7b5;
+  border-radius: 4px;
+  /* padding: 2em; */
+}
+
+.contact-info-container,
+.formbold-form-wrapper {
+  padding: 0.8em 1.8em;
+}
+
+.formbold-mb-5 {
+  margin-bottom: 20px;
+}
+.formbold-pt-3 {
+  padding-top: 12px;
+}
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  /* max-width: 550px; */
+  width: 100%;
+  /* background: white; */
+}
+.formbold-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #044460;
+  margin-bottom: 12px;
+}
+.formbold-form-label-2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.formbold-form-input {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input:focus,
+.formbold-form-input-other:focus {
+  border-color: #00a0e3;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-form-input-other {
+  width: 100%;
+  /* padding: 12px 24px; */
+  /* border-radius: 6px; */
+  border: 0;
+  border-bottom: 1px solid #b9b9b9;
+  /* background: white; */
+  font-weight: 500;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+
+.formbold-btn {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 14px 32px;
+  border: none;
+  font-weight: 600;
+  background-color: #00a0e3;
+  color: white;
+  cursor: pointer;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold--mx-3 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.formbold-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.w-full {
+  width: 100%;
+}
+
+.form-radio-btn {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.6em;
+}
+
+.form-container-flex {
+  display: flex;
+  column-gap: 0.4em;
+}
+
+.responsive-map {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.responsive-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2em;
+    color: #044460;
+  }
+}
